@@ -1,4 +1,4 @@
 # Acerte-o-numero
 
 ## Descrição: 
-- Tente acertar o numero com base nas pistas atribuidas;
+- Tente acertar o número com base nas pistas atribuidas;
