@@ -44,11 +44,16 @@ class MainActivity : AppCompatActivity() {
         })
 
         this.btResponder.setOnClickListener{
-            if(this.etResposta.text.toString().toInt() == this.numeroAleatorio.getnumber()){
-                chuteCerto()
+            try{
+                if(this.etResposta.text.toString().toInt() == this.numeroAleatorio.getnumber()){
+                    chuteCerto()
+                }
+                else{
+                    chuteErrado()
+                }
             }
-            else{
-                chuteErrado()
+            catch(e: Exception){
+                Log.i("APP_ACERTE", "Error")
             }
         }
     }
